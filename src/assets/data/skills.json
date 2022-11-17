@@ -1,0 +1,31 @@
+  {
+    "skills": {
+      "professional": [
+        "Vue.js",
+        "Pinia",
+        "Vue Router",
+        "Unit Testing",
+        "Web Components",
+        "AWS",
+        "Typescript",
+        "Javascript",
+        "SASS",
+        "CSS",
+        "BEM",
+        "HTML",
+        "jQuery",
+        "SQL",
+        "C#",
+        "Git",
+        "Azure Devops"
+      ],
+      "recreational": [
+        "React.js",
+        "Next.js",
+        "Firebase Auth",
+        "Firebase Firestore",
+        "Firebase Hosting",
+        "Google Maps"
+      ]
+    }
+  }
