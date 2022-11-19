@@ -6,7 +6,7 @@
     :ellipsis="false"
     router
   >
-    <div class="logo"><span>LOGO</span></div>
+    <div class="logo"><span>Lorne Cyr</span></div>
     <div class="flex-grow"></div>
     <el-menu-item index="/" default>Home</el-menu-item>
     <el-menu-item index="/projects">Projects</el-menu-item>
@@ -32,5 +32,6 @@
     align-items: center;
     justify-content: center;
     padding: 0 20px;
+    text-transform: uppercase;
   }
 </style>

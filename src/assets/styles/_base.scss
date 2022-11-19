@@ -1,0 +1,26 @@
+:root {
+  --base-font-size: 14px;
+  --max-page-width: 1380px;
+  --description-padding: 20px;
+
+  --primary-color: var(--el-color-primary);
+  --secondary-color: var(--el-color-primary-light-5);
+}
+
+html {
+  font-size: var(--base-font-size);
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+hr {
+  border-top: 1px;
+  border-style: solid;
+  border-color: black;
+  border-bottom: 0;
+}
