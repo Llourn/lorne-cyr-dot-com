@@ -8,7 +8,7 @@
   >
     <div class="logo"><span>Lorne Cyr</span></div>
     <div class="flex-grow"></div>
-    <el-menu-item index="/" default>Home</el-menu-item>
+    <el-menu-item index="/">Home</el-menu-item>
     <el-menu-item index="/projects">Projects</el-menu-item>
   </el-menu>
 </template>
