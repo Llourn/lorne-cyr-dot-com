@@ -1,6 +1,6 @@
 <template>
   <el-card :body-style="{ padding: '0px' }">
-    <img :src="imageWithPath" class="image" />
+    <img :src="props.project.image" class="image" />
     <div style="padding: 14px">
       <h2>{{ props.project.title }}</h2>
       <div class="bottom">
@@ -22,17 +22,12 @@
 
 <script setup lang="ts">
   import type { Project } from "@/models/ProjectModel";
-  import { computed } from "vue";
 
   export interface ProjectCardProps {
     project: Project;
   }
 
   const props = defineProps<ProjectCardProps>();
-
-  const imageWithPath = computed(() => {
-    return `${import.meta.env.VITE_MEDIA_URL}${props.project.image}`;
-  });
 
   const loadPage = (index: number) => {
     window.open(props.project.links[index].url, "_blank", "noreferrer");
