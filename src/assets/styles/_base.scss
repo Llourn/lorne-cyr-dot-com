@@ -3,6 +3,8 @@
   --max-page-width: 1380px;
   --description-padding: 20px;
 
+  --standard-border-radius: 4px;
+
   --primary-color: var(--el-color-primary);
   --secondary-color: var(--el-color-primary-light-5);
 }
@@ -16,6 +18,7 @@ html {
 body {
   margin: 0;
   box-sizing: border-box;
+  background-color: var(--el-color-primary-light-9);
 }
 
 hr {

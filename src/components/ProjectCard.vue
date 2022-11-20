@@ -2,9 +2,18 @@
   <el-card :body-style="{ padding: '0px' }">
     <img :src="imageWithPath" class="image" />
     <div style="padding: 14px">
-      <span>{{ props.project.title }}</span>
+      <h2>{{ props.project.title }}</h2>
       <div class="bottom">
-        <el-button text class="button">Operating</el-button>
+        <el-button-group>
+          <el-button
+            type="primary"
+            class="button"
+            v-for="(link, index) in props.project.links"
+            @click.prevent="loadPage(index)"
+            :key="index"
+            >{{ link.title }}</el-button
+          >
+        </el-button-group>
         <div class="description" v-html="props.project.description"></div>
       </div>
     </div>
@@ -22,13 +31,22 @@
   const props = defineProps<ProjectCardProps>();
 
   const imageWithPath = computed(() => {
-    return `src/assets/${props.project.image}`;
+    return `${import.meta.env.VITE_MEDIA_URL}${props.project.image}`;
   });
+
+  const loadPage = (index: number) => {
+    window.open(props.project.links[index].url, "_blank", "noreferrer");
+  };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   .image {
     width: 100%;
     display: block;
+  }
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 14px;
   }
 </style>
