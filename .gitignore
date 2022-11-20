@@ -27,6 +27,6 @@ coverage
 *.sln
 *.sw?
 .env
-.gitignore
 .env.production
 .env.development
+.firebase/*
