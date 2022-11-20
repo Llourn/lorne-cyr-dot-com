@@ -9,8 +9,6 @@
           <img :src="portrait" alt="Portrait" />
         </div>
         <div class="blurb">
-          <p>{{ mode }}</p>
-          <p>{{ media }}</p>
           <p>Hi, I'm Lorne.</p>
           <p>
             I'm a self-taught developer. I appreciate motivation, but prefer
@@ -73,15 +71,11 @@
   import skillData from "../assets/data/skills.json";
   import { Connection } from "@element-plus/icons-vue";
   import MyContacts from "../components/MyContacts.vue";
-  import { ref } from "vue";
 
   const skills = skillData.skills as {
     professional: string[];
     recreational: string[];
   };
-
-  const mode = ref(import.meta.env.MODE);
-  const media = ref(import.meta.env.VITE_MEDIA_URL);
 </script>
 
 <style lang="scss" scoped>
@@ -89,10 +83,6 @@
 
   main {
     padding: var(--description-padding);
-  }
-
-  .content-container {
-    position: relative;
   }
 
   img {

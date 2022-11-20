@@ -1,7 +1,7 @@
 <template>
   <div class="projects-container">
     <project-card
-      v-for="(project, index) in projectsComp"
+      v-for="(project, index) in projects"
       :project="project"
       :key="index"
     />
@@ -9,15 +9,12 @@
 </template>
 
 <script setup lang="ts">
-  import { data } from "@/data/projects-data";
+  import { projects } from "@/data/projects-data";
   import ProjectCard from "@/components/ProjectCard.vue";
-  import { computed, ref } from "vue";
-
-  const projects = ref(data);
+  import { computed } from "vue";
 
   const projectsComp = computed(() => {
-    console.log(data);
-    return data;
+    return projects;
   });
 </script>
 

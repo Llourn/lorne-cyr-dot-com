@@ -6,7 +6,7 @@ import slimeGame from "../assets/slime-game.png";
 import spaceLazors from "../assets/space-lazors.png";
 import type { Project } from "@/models/ProjectModel";
 
-export const data = [
+export const projects = [
   {
     image: myWebsite,
     title: "This website",
