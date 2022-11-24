@@ -33,8 +33,9 @@
               >Battlesnake Inc.</el-link
             >
             In my spare time I like to build projects related to other interests
-            of mine, like learning Japanese. I also value work/life balance and
-            know when to step away from the computer and recharge.
+            of mine, like learning Japanese 「がんばってね！」. I also value
+            work/life balance and know when to step away from the computer and
+            recharge.
           </p>
         </div>
       </div>

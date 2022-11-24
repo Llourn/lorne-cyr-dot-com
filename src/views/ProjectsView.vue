@@ -11,11 +11,6 @@
 <script setup lang="ts">
   import { projects } from "@/data/projects-data";
   import ProjectCard from "@/components/ProjectCard.vue";
-  import { computed } from "vue";
-
-  const projectsComp = computed(() => {
-    return projects;
-  });
 </script>
 
 <style lang="scss" scoped>
